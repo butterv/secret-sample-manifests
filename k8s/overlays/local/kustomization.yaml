@@ -1,0 +1,7 @@
+bases:
+  - ../../base
+
+patches:
+  - server/rollout.yaml
+
+#namePrefix: local-

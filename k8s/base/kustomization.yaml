@@ -1,0 +1,8 @@
+resources:
+  - proxy/configmap.yaml
+  - proxy/rollout.yaml
+  - proxy/service.yaml
+  - server/configmap.yaml
+  - server/rollout.yaml
+  - server/secret-sealedsecret.yaml
+  - server/service.yaml

@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: secret-sample-server
+spec:
+  strategy:
+    blueGreen:
+      # The AutoPromotionSeconds will make the rollout automatically promote the new ReplicaSet to active Service
+      # after the AutoPromotionSeconds time has passed since the rollout has entered a paused state.
+      # If the AutoPromotionEnabled field is set to true, this field will be ignored.
+      autoPromotionSeconds: 30

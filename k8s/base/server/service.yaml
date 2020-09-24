@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: secret-sample-server-active
+spec:
+  selector:
+    app: secret-sample-server
+  type: ClusterIP
+  clusterIP: None # headless service
+  ports:
+    - protocol: TCP
+      port: 10000  # no targetPort for headless service
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: secret-sample-server-preview
+spec:
+  selector:
+    app: secret-sample-server
+  type: ClusterIP
+  clusterIP: None # headless service
+  ports:
+    - protocol: TCP
+      port: 10000  # no targetPort for headless service
