@@ -4,5 +4,5 @@ resources:
   - proxy/service.yaml
   - server/configmap.yaml
   - server/rollout.yaml
-  - server/secret-sealedsecret.yaml
+  - server/sealed-secret.yaml
   - server/service.yaml
