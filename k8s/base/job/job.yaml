@@ -5,11 +5,11 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
-  backoffLimit: 1
+  backoffLimit: 0
   template:
     spec:
       containers:
         - name: sample-job
           image: istsh/secret-sample-app-job:1.0.0
-          args: ["fail"]
+          args: ["success"]
       restartPolicy: Never
