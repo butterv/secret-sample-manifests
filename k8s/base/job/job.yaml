@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sample-job
+spec:
+  ttlSecondsAfterFinished: 10
+  template:
+    spec:
+      containers:
+        - name: sample-job
+          image: istsh/secret-sample-app-job:1.0.0
+          args: ["success"]
+      restartPolicy: Never

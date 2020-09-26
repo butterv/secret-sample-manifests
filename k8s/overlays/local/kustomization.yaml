@@ -3,5 +3,6 @@ bases:
 
 patches:
   - server/rollout.yaml
+  - server/sealed-secret.yaml
 
 #namePrefix: local-
