@@ -5,7 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
-  ttlSecondsAfterFinished: 10
+  backoffLimit: 1
   template:
     spec:
       containers:
