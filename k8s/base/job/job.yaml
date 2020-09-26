@@ -13,5 +13,5 @@ spec:
       containers:
         - name: sample-job
           image: istsh/secret-sample-app-job:1.0.0
-          args: ["fail"]
+          args: ["success"]
       restartPolicy: Never
