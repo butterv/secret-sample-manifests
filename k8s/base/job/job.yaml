@@ -4,8 +4,10 @@ metadata:
   name: sample-job
   annotations:
     argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: HookFailed
 spec:
   backoffLimit: 0
+  ttlSecondsAfterFinished: 60
   template:
     spec:
       containers:
