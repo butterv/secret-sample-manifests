@@ -1,8 +1,9 @@
 resources:
+  - job/job.yaml
   - proxy/configmap.yaml
   - proxy/rollout.yaml
   - proxy/service.yaml
   - server/configmap.yaml
   - server/rollout.yaml
-#  - server/sealed-secret.yaml
+  - server/sealed-secret.yaml
   - server/service.yaml
