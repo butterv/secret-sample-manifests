@@ -4,14 +4,13 @@ metadata:
   name: sample-job
   annotations:
     argocd.argoproj.io/hook: PreSync
-#    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
   backoffLimit: 0
-  ttlSecondsAfterFinished: 10
   template:
     spec:
       containers:
         - name: sample-job
           image: istsh/secret-sample-app-job:1.0.1
-          args: ["success"]
+          args: ["fail"]
       restartPolicy: Never
