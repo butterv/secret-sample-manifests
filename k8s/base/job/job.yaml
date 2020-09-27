@@ -14,4 +14,7 @@ spec:
         - name: sample-job
           image: istsh/secret-sample-app-job:1.0.0
           args: ["success"]
+          envFrom:
+            - secretRef:
+                name: sample-secret
       restartPolicy: Never
