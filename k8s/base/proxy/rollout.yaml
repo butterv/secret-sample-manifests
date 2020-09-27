@@ -19,7 +19,7 @@ spec:
             name: envoy-secret-sample-proxy-config
       containers:
         - name: grpc-gateway
-          image: istsh/secret-sample-app-proxy:1.0.0
+          image: istsh/secret-sample-app-proxy:1.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

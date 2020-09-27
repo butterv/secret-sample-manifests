@@ -19,7 +19,7 @@ spec:
             name: envoy-secret-sample-server-config
       containers:
         - name: grpc-server
-          image: istsh/secret-sample-app-server:1.0.0
+          image: istsh/secret-sample-app-server:1.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
