@@ -2,6 +2,7 @@ bases:
   - ../../base
 
 patches:
+  - proxy/rollout.yaml
   - server/rollout.yaml
   - server/sealed-secret.yaml
 
