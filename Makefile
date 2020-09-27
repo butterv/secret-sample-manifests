@@ -1,3 +1,6 @@
+dry-run:
+	kustomize build k8s/overlays/local/ | kubectl apply -f - --dry-run
+
 run:
 	kustomize build k8s/overlays/local/ | kubectl apply -f -
 
